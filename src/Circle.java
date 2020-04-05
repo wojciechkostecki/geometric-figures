@@ -1,6 +1,6 @@
 public class Circle {
-    Point s;
-    double r;
+    private Point s;
+    private double r;
 
     public Circle(Point s, double r) {
         this.s = s;

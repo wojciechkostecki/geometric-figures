@@ -1,8 +1,8 @@
 public class Rectangle {
-    Point p1;
-    Point p2;
-    Point p3;
-    Point p4;
+    private Point p1;
+    private Point p2;
+    private Point p3;
+    private Point p4;
 
     public Rectangle(Point p1, Point p2, Point p3, Point p4) {
         this.p1 = p1;
