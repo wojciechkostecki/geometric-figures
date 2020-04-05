@@ -1,18 +1,18 @@
 public class Circle {
-    private Point s;
+    private Point center;
     private double r;
 
-    public Circle(Point s, double r) {
-        this.s = s;
+    public Circle(Point center, double r) {
+        this.center = center;
         this.r = r;
     }
 
-    public Point getS() {
-        return s;
+    public Point getCenter() {
+        return center;
     }
 
-    public void setS(Point s) {
-        this.s = s;
+    public void setCenter(Point center) {
+        this.center = center;
     }
 
     public double getR() {

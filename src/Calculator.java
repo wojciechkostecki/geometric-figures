@@ -1,6 +1,6 @@
 public class Calculator {
 
-    public double calculateTheRectanglesArea(Rectangle rectangle) {
+    public double calculateRectanglesArea(Rectangle rectangle) {
         double x1 = rectangle.getP1().getX();
         double y1 = rectangle.getP1().getY();
         double x2 = rectangle.getP2().getX();
@@ -17,13 +17,9 @@ public class Calculator {
         return sideA * sideB;
     }
 
-    public boolean checkIfThePointInTheCircle(Circle circle, Point x) {
-        double z = ((x.getX() - circle.getS().getX()) * (x.getX() - circle.getS().getX())) +
-                ((x.getY() - circle.getS().getY()) * (x.getY() - circle.getS().getY()));
-        if (z == (circle.getR() * circle.getR())) {
-            return true;
-        }else {
-            return false;
-        }
+    public boolean isPointInsideCircle(Circle circle, Point x) {
+        double z = ((x.getX() - circle.getCenter().getX()) * (x.getX() - circle.getCenter().getX())) +
+                ((x.getY() - circle.getCenter().getY()) * (x.getY() - circle.getCenter().getY()));
+        return z == (circle.getR() * circle.getR());
     }
 }
