@@ -17,13 +17,13 @@ public class Calculator {
         return sideA * sideB;
     }
 
-    public void checkIfThePointInTheCircle(Circle circle, Point x) {
+    public boolean checkIfThePointInTheCircle(Circle circle, Point x) {
         double z = ((x.getX() - circle.getS().getX()) * (x.getX() - circle.getS().getX())) +
                 ((x.getY() - circle.getS().getY()) * (x.getY() - circle.getS().getY()));
         if (z == (circle.getR() * circle.getR())) {
-            System.out.println("Punkt leży wewnątrz okręgu");
+            return true;
         }else {
-            System.out.println("Punkt NIE leży wewnątrz okręgu");
+            return false;
         }
     }
 }
