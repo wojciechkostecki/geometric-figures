@@ -1,6 +1,6 @@
 public class Calculator {
 
-    public void rectangleArea(Rectangle rectangle) {
+    public double calculateTheRectanglesArea(Rectangle rectangle) {
         double x1 = rectangle.getP1().getX();
         double y1 = rectangle.getP1().getY();
         double x2 = rectangle.getP2().getX();
@@ -14,7 +14,7 @@ public class Calculator {
         double b = ((x3 - x1) * (x3 - x1)) + ((y3 - y1) * (y3 - y1));
         double sideB = Math.sqrt(b);
 
-        System.out.println(sideA * sideB);
+        return sideA * sideB;
     }
 
     public void pointInCircle(Circle circle, Point x) {
