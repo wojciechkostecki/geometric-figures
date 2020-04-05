@@ -17,7 +17,7 @@ public class Calculator {
         return sideA * sideB;
     }
 
-    public void pointInCircle(Circle circle, Point x) {
+    public void checkIfThePointInTheCircle(Circle circle, Point x) {
         double z = ((x.getX() - circle.getS().getX()) * (x.getX() - circle.getS().getX())) +
                 ((x.getY() - circle.getS().getY()) * (x.getY() - circle.getS().getY()));
         if (z == (circle.getR() * circle.getR())) {

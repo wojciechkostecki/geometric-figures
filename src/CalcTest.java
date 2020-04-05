@@ -14,6 +14,6 @@ public class CalcTest {
         Point x = new Point(4, 4);
         Circle circle = new Circle(p, 3);
 
-        calculator.pointInCircle(circle, x);
+        calculator.checkIfThePointInTheCircle(circle, x);
     }
 }
