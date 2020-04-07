@@ -1,6 +1,6 @@
 public class Calculator {
 
-    public double calculateRectanglesArea(Rectangle rectangle) {
+    public double calculateRectangleArea(Rectangle rectangle) {
         double x1 = rectangle.getP1().getX();
         double y1 = rectangle.getP1().getY();
         double x2 = rectangle.getP2().getX();
